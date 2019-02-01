@@ -1,0 +1,108 @@
+body
+{
+
+	background: grey;
+
+}
+
+#TypeChartContainer
+{
+
+	border-bottom: solid 1px black;
+	border-right: solid 1px black;
+	display: inline-block;
+	
+	float: left;
+	
+	font-family: monospace;
+	font-weight: bold;
+	font-size: 10px;
+
+}
+
+#TypeSelectionContainer
+{
+
+	border-bottom: solid 1px black;
+	border-right: solid 1px black;
+	display: inline-block;
+	
+	margin-left: 32px;
+	
+	font-family: monospace;
+	font-weight: bold;
+	font-size: 10px;
+
+}
+
+.TypeLabel
+{
+
+	cursor: pointer;
+
+}
+
+.TypeLabel:hover
+{
+
+	border-color: silver;
+
+}
+
+.TypeChartCell
+{
+
+	height: 24px;
+	width: 48px;
+	
+	background: #303030;
+	
+	display: inline-block;
+	border-top: solid 1px black;
+	border-left: solid 1px black;
+	
+	float: left;
+	
+	text-align: center;
+	
+	padding-top: 10px;
+	
+	color: #FFFFFF;
+
+}
+
+.TypeChartRow
+{
+
+	clear: both;
+
+}
+
+
+/** Type Colors **/
+.normal { background: #A8A878; }
+.fight { background: #C03028; }
+.flying { background: #A890F0; }
+.poison { background: #A040A0; }
+.ground { background: #E0C068; }
+.rock { background: #B8A038; }
+.bug{ background: #A8B820; }
+.ghost { background: #705898; }
+.steel { background: #B8B8D0; }
+.fire { background: #F08030; }
+.water { background: #6890F0; }
+.grass { background: #78C850; }
+.electric { background: #F8D030; }
+.psychic { background: #F85888; }
+.ice { background: #98D8D8; }
+.dragon { background: #7038F8; }
+.dark { background: #705848; }
+.fairy { background: #EE99AC; }
+
+/** Resist Colors **/
+.full { background: #FFFFFF; color: #000000; }
+.immune { background: #000000; color: #FFFFFF; }
+.double { background: #009900; color: #FFFFFF; }
+.half { background: #FF0000; color: #FFFFFF; }
+.quarter { background: #660000; color: #FFFFFF; }
+.quad { background: #006600; color: #FFFFFF; }

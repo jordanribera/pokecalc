@@ -1,0 +1,130 @@
+TypeChart = {
+
+	'GetTypeNumber': function(GettingType)
+	{
+	
+		if(GettingType == 'normal') return 0;
+		if(GettingType == 'fight') return 1;
+		if(GettingType == 'flying') return 2;
+		if(GettingType == 'poison') return 3;
+		if(GettingType == 'ground') return 4;
+		if(GettingType == 'rock') return 5;
+		if(GettingType == 'bug') return 6;
+		if(GettingType == 'ghost') return 7;
+		if(GettingType == 'steel') return 8;
+		if(GettingType == 'fire') return 9;
+		if(GettingType == 'water') return 10;
+		if(GettingType == 'grass') return 11;
+		if(GettingType == 'electric') return 12;
+		if(GettingType == 'psychic') return 13;
+		if(GettingType == 'ice') return 14;
+		if(GettingType == 'dragon') return 15;
+		if(GettingType == 'dark') return 16;
+		if(GettingType == 'fairy') return 17;
+	
+	},
+	
+	'GetTypeString': function(GettingType)
+	{
+	
+		TypeStrings = ['normal','fight','flying','poison','ground','rock','bug','ghost','steel','fire','water','grass','electric','psychic','ice','dragon','dark','fairy'];
+		
+		return TypeSTrings[GettingType];
+	
+	},
+
+	'Types': [
+
+		{
+			'Type': 'normal',
+			'Resists': [1,2,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1]
+		},
+		
+		{
+			'Type': 'fight',
+			'Resists': [1,1,2,1,1,.5,.5,1,1,1,1,1,1,2,1,1,.5,2]
+		},
+		
+		{
+			'Type': 'flying',
+			'Resists': [1,.5,1,1,0,2,.5,1,1,1,1,.5,2,1,2,1,1,1]
+		},
+		
+		{
+			'Type': 'poison',
+			'Resists': [1,.5,1,.5,2,1,.5,1,1,1,1,.5,1,2,1,1,1,.5]
+		},
+		
+		{
+			'Type': 'ground',
+			'Resists': [1,1,1,.5,1,.5,1,1,1,1,2,2,0,1,2,1,1,1]
+		},
+		
+		{
+			'Type': 'rock',
+			'Resists': [.5,2,.5,.5,2,1,1,1,2,.5,2,2,1,1,1,1,1,1]
+		},
+		
+		{
+			'Type': 'bug',
+			'Resists': [1,.5,2,1,.5,2,1,1,1,2,1,.5,1,1,1,1,1,1]
+		},
+		
+		{
+			'Type': 'ghost',
+			'Resists': [0,0,1,.5,1,1,.5,2,1,1,1,1,1,1,1,1,2,1]
+		},
+		
+		{
+			'Type': 'steel',
+			'Resists': [.5,2,.5,0,2,.5,.5,1,.5,2,1,.5,1,.5,.5,.5,1,.5]
+		},
+		
+		{
+			'Type': 'fire',
+			'Resists': [1,1,1,1,2,2,.5,1,.5,.5,2,.5,1,1,.5,1,1,.5]
+		},
+		
+		{
+			'Type': 'water',
+			'Resists': [1,1,1,1,1,1,1,1,.5,.5,.5,2,2,1,.5,1,1,1]
+		},
+		
+		{
+			'Type': 'grass',
+			'Resists': [1,1,2,2,.5,1,2,1,1,2,.5,.5,.5,1,2,1,1,1]
+		},
+		
+		{
+			'Type': 'electric',
+			'Resists': [1,1,.5,1,2,1,1,1,.5,1,1,1,.5,1,1,1,1,1]
+		},
+		
+		{
+			'Type': 'psychic',
+			'Resists': [1,.5,1,1,1,1,2,2,1,1,1,1,1,.5,1,1,2,1]
+		},
+		
+		{
+			'Type': 'ice',
+			'Resists': [1,2,1,1,1,2,1,1,2,2,1,1,1,1,.5,1,1,1]
+		},
+		
+		{
+			'Type': 'dragon',
+			'Resists': [1,1,1,1,1,1,1,1,1,.5,.5,.5,.5,1,2,2,1,2]
+		},
+		
+		{
+			'Type': 'dark',
+			'Resists': [1,2,1,1,1,1,2,.5,1,1,1,1,1,0,1,1,.5,2]
+		},
+		
+		{
+			'Type': 'fairy',
+			'Resists': [1,.5,1,2,1,1,.5,1,2,1,1,1,1,1,1,0,.5,1]
+		}
+		
+	]
+
+}
